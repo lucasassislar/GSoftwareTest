@@ -1,0 +1,17 @@
+<div class="horizontalParent">
+    <div class="breedList">
+        <input type="text" class="form-control breedFilter" [(ngModel)]="breedFilter" placeholder="Filtro"
+            [ngModelOptions]="{standalone: true}" (keydown)="buildFilter()" autocomplete="off">
+        <div class="breedElement" *ngFor="let breed of filteredBreeds">
+            <div class="breedName" [innerHTML]="breed.str" (click)="showBreed(breed.id)"></div>
+            <div class="breedLine"></div>
+        </div>
+    </div>
+    <div class="breedDescription">
+        <div *ngIf="currentBreed != null">
+            <h2 class="breedTitle" [innerHTML]="currentBreed.str"></h2>
+            <div class="breedImage" [style.backgroundImage]="'url(' + imageUrl + ')'"></div>
+            <button type=" button" class="randomImage" (click)="updateBreedImg()">Random</button>
+        </div>
+    </div>
+</div>

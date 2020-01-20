@@ -1,0 +1,30 @@
+.desktop-only {
+  display: none;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 93.5%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 40px;
+}
+
+.app-header {
+  height: 40px;
+}
+
+.app-body {
+  margin: 0px;
+}
+
+.sideBar {
+  // position: relative;
+  position: fixed;
+  top: 5%;
+}
+.minimizer {
+  position: absolute;
+  top: 5%;
+}

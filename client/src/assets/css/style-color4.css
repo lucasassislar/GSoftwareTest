@@ -1,0 +1,118 @@
+/* Alternative colors */
+/* menu */
+.menu-links {
+  background: #F8B425; }
+  @media (min-width: 601px) {
+    .menu-links {
+      background: transparent; } }
+
+.menu-links .links li.cta a {
+  border-color: #F8B425; }
+
+.menu-links .links li.cta a:hover {
+  border-color: #F8B425;
+  background: rgba(248, 180, 37, 0.1); }
+
+.menu-links .links li a:hover,
+.menu-links .links li a.menu-visible,
+.menu-links .links li a:active {
+  color: #F8B425; }
+
+/* clock */
+.clock:before {
+  border-top-color: #F8B425; }
+
+.clock:after {
+  border-color: #F8B425; }
+
+.clock .clock-wrapper .tile .days,
+.clock .clock-wrapper .tile .hours,
+.clock .clock-wrapper .tile .minutes,
+.clock .clock-wrapper .tile .seconds {
+  border-bottom-color: #F8B425; }
+
+/* main page */
+.section .content .title-desc .title h2 {
+  color: #1d1d1d; }
+
+.section .content .title-desc h2 {
+  background: #fff;
+  color: #1d1d1d;
+  display: inline-block;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-bottom: 0.075em; }
+
+.section .content .title-desc h3,
+.section .content .item-desc h3,
+.section .content .c-features-list li h3 {
+  color: #F8B425; }
+
+.section-home .content .title-desc h3 {
+  color: #fff; }
+
+.section-contact .content .item-desc a,
+.section-contact .content .c-form .form .fields label.error {
+  color: #F8B425; }
+
+.section .content .c-features-list li:before {
+  background: #F8B425; }
+
+.section .content .c-features-list li:after {
+  border-color: #F8B425; }
+
+/* footer */
+.site-footer .note .marked,
+.site-footer .note a {
+  color: #F8B425;
+  text-decoration: underline; }
+
+.scrolldown a:after {
+  background: #F8B425; }
+
+.site-footer .subscription .form .input {
+  border-color: #F8B425; }
+
+/* Buttons */
+.magic-btn {
+  color: #F8B425; }
+
+.arrow-circ-btn .arrow-icon:before {
+  border-color: #F8B425;
+  border-left-color: transparent; }
+
+.arrow-circ-btn:hover .arrow-icon:after {
+  border-color: #F8B425; }
+
+.arrow-circ-btn:focus .arrow-icon:before, .arrow-circ-btn:hover .arrow-icon:before {
+  border-color: #fff;
+  border-left-color: transparent; }
+
+.circ-btn:before {
+  border-color: #F8B425;
+  border-top-color: transparent; }
+
+.circ-btn:hover:before {
+  border-color: #fff;
+  border-top-color: transparent; }
+
+.circ-btn:hover {
+  color: #F8B425; }
+
+/* Nav dots and Slider indication */
+#fp-nav ul li a.active span,
+#fp-nav ul li a.active:hover span {
+  border-color: #F8B425; }
+
+.section .content .wrapper .swiper-pagination-bullet:hover,
+.section .content .wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #F8B425; }
+
+.section .content .wrapper .swiper-pagination-bullet:hover:before,
+.section .content .wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+  border-color: #F8B425; }
+
+.section .content .wrapper .items-nav-container .items-button a:after {
+  background: #F8B425; }
+
+/* Fonts */

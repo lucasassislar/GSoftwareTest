@@ -1,0 +1,128 @@
+<div class="menu-mobile" ng-class="{'opened': opened}">
+    <ul>
+        <li>
+            <div class="arrow-up"></div>
+        </li>
+        <li>
+            <a href="/" class="home"><%= __('HOME') %></a>
+        </li>
+        <li>
+            <a href="/download"><%= __('DOWNLOAD') %></a>
+        </li>
+        <li>
+            <a href="/pricing"><%= __('PRICING') %></a>
+        </li>
+        <li>
+            <a href="https://token.gimmer.net/#exchanges"><%= __('BUY TOKENS') %></a>
+        </li>
+        <li>
+            <a href="/docs/quickstart"><%= __('DOCS') %></a>
+        </li>
+        <li>
+            <a href="/tutorials"><%= __('TUTORIALS') %></a>
+        </li>
+        <li>
+            <a href="/about"><%= __('ABOUT') %></a>
+        </li>
+        <li>
+            <a href="/support"><%= __('SUPPORT') %></a>
+        </li>
+    </ul>
+</div>
+<div class="header" ng-show="!docsMenu">
+    <div class="left col-md-10">
+        <div class="logo">
+            <a href="/"><img src="assets/img/logo.png"></a>
+        </div>
+        <ul class="main-menu">
+            <li>
+                <a href="/" class="home"><%= __('HOME') %></a>
+            </li>
+            <li>
+                <a href="/download"><%= __('DOWNLOAD') %></a>
+            </li>
+            <li>
+                <a href="/pricing"><%= __('PRICING') %></a>
+            </li>
+            <li>
+                <a href="https://token.gimmer.net/#exchanges"><%= __('BUY TOKENS') %></a>
+            </li>
+            <li>
+                <a href="/docs/quickstart"><%= __('DOCS') %></a>
+            </li>
+            <li>
+                <a href="/tutorials"><%= __('TUTORIALS') %></a>
+            </li>
+            <li>
+                <a href="/about"><%= __('ABOUT') %></a>
+            </li>
+            <li>
+                <a href="/support"><%= __('SUPPORT') %></a>
+            </li>
+        </ul>
+    </div>
+    <div class="right col-md-2 text-right">
+        <ul class="social">
+            <li>
+                <a href="https://twitter.com/GimmerBot" target="_blank" class="twitter"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/gimmerbot/" target="_blank" class="facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/gimmerbot" target="_blank" class="instagram"></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/Gimmer" target="_blank" class="youtube"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/11171276/" target="_blank" class="linkedin"></a>
+            </li>
+            <li>
+                <a href="https://medium.com/@GimmerBot" target="_blank" class="medium"></a>
+            </li>
+            <li>
+                <a href="https://bitcointalk.org/index.php?topic=2760414.0" target="_blank" class="btctalk"></a>
+            </li>
+        </ul>
+        <span class="icon icon-ic-64 open-menu" ng-click="openMenu()"></span>
+        <div class="langs">
+            <img src="assets/img/lang-icon.png" class="trigger">
+            <ul>
+                <li>
+                    <div class="arrow-up"></div>
+                </li>
+                <li class="<%= {en: 'active'}[getLocale()] %>">
+                    <a href="/l/en"><img src="assets/img/en.png">English</a>
+                </li>
+                <li class="<%= {pt: 'active'}[getLocale()] %>">
+                    <a href="/l/pt"><img src="assets/img/pt.png">Portuguese</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".main-menu a").each((index, object) => {
+        if (document.location.href.indexOf($(object).attr("href")) > -1) {
+            if (document.location.href != 'http://127.0.0.1:4000/') {
+                $('a.home').parent().removeClass("active");
+                $(object).parent().addClass("active");
+            } else {
+                $('a.home').parent().addClass("active");
+            }
+        }
+    });
+
+    $(".menu-mobile a").each((index, object) => {
+        if (document.location.href.indexOf($(object).attr("href")) > -1) {
+            if (document.location.href != 'http://127.0.0.1:4000/') {
+                $('a.home').parent().removeClass("active");
+                $(object).parent().addClass("active");
+            } else {
+                $('a.home').parent().addClass("active");
+            }
+        }
+    });
+</script>
