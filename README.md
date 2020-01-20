@@ -8,4 +8,8 @@ Running the app:
 
 
 Known issues:
+
     - Vertical images don't center right
+    
+    
+   Online version: https://distrolucas.com/p/dogs/
